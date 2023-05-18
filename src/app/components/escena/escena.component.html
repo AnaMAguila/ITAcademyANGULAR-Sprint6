@@ -1,5 +1,10 @@
+<div>
+    <button (click)="prev()">Anterior</button>
+    <button (click)="next()">Següent</button>
+</div>
+
 <ul>
-    <li *ngFor="let data of frase">
+    <li *ngFor="let data of frase" [ngClass]="{'active': data.id === currentSentence}">
         {{data.frase}}
     </li>
 </ul>

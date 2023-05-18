@@ -12,3 +12,12 @@ li {
     border-radius: 30px;
     background-color: #fff;
 }
+
+li.active {
+    background-color: #ffc0cb;
+}
+
+button {
+    width: 50%;
+    padding: 20px;
+}
