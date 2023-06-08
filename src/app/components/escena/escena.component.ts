@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class EscenaComponent {
   @Input() frase : any;
+  @Input() varInici : any;
   public currentSentence = 0;
 
   prev(){

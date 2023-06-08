@@ -1,1 +1,9 @@
-<app-escena [frase]="dataFrases"></app-escena>
+<div class="inici" *ngIf="varInici==0" style="text-align: center;">
+  <h1>Gestió Empresarial ANGULAR</h1>
+  <p>Benvingut/da al nostre tutorial per a nous usuaris</p>
+  <p>A continuació et mostrem un petit tutorial. Pots navegar pels botons per accedir als diferents consells.</p>
+
+  <button (click)="inici()">Iniciar</button>
+</div>
+
+<app-escena [frase]="dataFrases" *ngIf="varInici==1"></app-escena>

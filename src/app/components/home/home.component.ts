@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-  dataFrases: any[];
+  public dataFrases: any[];
+  public varInici: number = 0;
 
   constructor(){
     this.dataFrases = [
@@ -27,5 +28,9 @@ export class HomeComponent {
         "frase" : "Mentrestant, altres heroes no van tenir tanta sort en la seva elecció ..."
       },
     ]
+  }
+
+  inici(){
+    this.varInici = 1;
   }
 }
