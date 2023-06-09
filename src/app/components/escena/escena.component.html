@@ -1,12 +1,15 @@
-<!-- <div *ngIf="varInici==1"> -->
-    <div>
-        <button (click)="prev()">Anterior</button>
-        <button (click)="next()">Següent</button>
-    </div>
-    
-    <ul>
-        <li *ngFor="let data of frase" [ngClass]="{'active': data.id === currentSentence}">
-            {{data.frase}}
-        </li>
-    </ul>
-<!-- </div> -->
+<div class="fons" [ngStyle]="{background: 'url(/assets/img/' + (currentSentence + 1) + '.jpg)', 'background-repeat': 'no-repeat', 'background-size': 'cover'}">
+
+  <div>
+    <button (click)="prev()">Anterior</button>
+    <button (click)="next()">Següent</button>
+  </div>
+
+  <ul>
+      <li *ngFor="let data of frase" [ngClass]="{'active': data.id === currentSentence}">
+          {{data.txt}}
+      </li>
+  </ul>
+
+</div>
+

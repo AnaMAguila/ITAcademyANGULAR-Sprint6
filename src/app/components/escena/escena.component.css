@@ -1,3 +1,10 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -20,4 +27,11 @@ li.active {
 button {
     width: 50%;
     padding: 20px;
+}
+
+.fons {
+  position: absolute;
+  height: 91vh;
+  width: 96vw;
+  padding: 20px;
 }
